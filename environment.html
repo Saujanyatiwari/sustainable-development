@@ -33,6 +33,36 @@
         .bt:hover{
             background-color: rgb(102, 210, 102);
         }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+           margin: 25px;
+           box-shadow: 5px 5px black;
+           overflow: hidden;
+        }
+        .intro{
+            height: 70px;
+            width: 100px;
+            padding:3px;
+            box-sizing: border-box;
+            position: absolute;
+            justify-content: center;
+            background-color: darkgray;
+        }
+        .p{
+            font-size: small;
+            margin: 10px;
+            visibility: hidden;
+            opacity:0;
+        }
+        .card:hover{
+            cursor: pointer;
+        }
+        .card:hover .intro{
+
+        }
     </style>
 </head>
 <body>
@@ -46,12 +76,12 @@
            <button class="bt" style="position:flex; justify-content:center;">Explore</button>
         </div>
         <div>
-            <h1 style="position: flex; justify-content: center; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">WASTE REDUCTION</h1>
+            <h1 style="position: flex; justify-content: center; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color: #003300;">WASTE REDUCTION</h1>
         </div>
         <div class="container">
             
             <div class="card" >
-                <img src="C:\Users\sauja\Downloads\refuse.jpg" alt="refuse" width="350px" height="450px">
+                <img src="C:\Users\sauja\Downloads\refuse.jpg" alt="refuse" width="300px" height="300px">
                 <div class="intro">
                     <h1>REFUSE</h1>
                     <p>Say no to single-use items and unnecessary packaging.
@@ -59,34 +89,21 @@
                 </div>
             </div>
             <div class="card">
-                <img src="C:\Users\sauja\Downloads\reduce.jpg" alt="refuse" width="350px" height="450px">
+                <img src="C:\Users\sauja\Downloads\reduce.jpg" alt="refuse" width="300px" height="300px">
                 <div class="intro">
                     <h1>REDUCE</h1>
                     <p>Cut down on overall consumption by buying only what you need.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="C:\Users\sauja\Downloads\reuse.jpg" alt="refuse" width="350px" height="450px">
+                <img src="C:\Users\sauja\Downloads\reuse.jpg" alt="refuse" width="300px" height="300px">
                 <div class="intro">
                     <h1>REUSE</h1>
                     <p>Use durable items and find creative ways to repurpose materials. </p>
                 </div>
-            </div>
-            <div class="card">
-                <img src="C:\Users\sauja\Downloads\recycle.jpg" alt="refuse" width="350px" height="450px">
-                <div class="intro">
-                    <h1>RECYCLE</h1>
-                    <p>Properly dispose of materials that can be recycled.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="C:\Users\sauja\Downloads\rot.jpeg" alt="refuse" width="350px" height="450px">
-                <div class="intro">
-                    <h1>ROT</h1>
-                    <p>Compost organic waste to reduce landfill contributions.</p>
-                </div>
-            </div>
+            
         </div>
+        
     </main>
    
 </body>
