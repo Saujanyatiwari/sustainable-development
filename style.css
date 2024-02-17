@@ -23,16 +23,203 @@ body{
 .bt:hover{
     background-color: rgb(102, 210, 102);
 }
-.container{
+
+
+
+/* * {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #161616;
+	min-height: 100vh;
+}
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#DA22FF, #9733EE);
+	clip-path: circle(30% at right 70%);
+}
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#E55D87, #5FC3E4);
+	clip-path: circle(20% at 10% 10%);
+} */
+
+
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgb(232, 250, 250);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+/* .container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+} */
+
+
+
+
+
+/* .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
 }
 .card{
-   margin: 25px;
+   margin: 15px;
    box-shadow: 5px 5px black;
-   overflow: hidden;
+   padding: 2px;
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   transition: 0.5s ease-in-out;
+
 }
-.intro{
+.cards{
+    margin: 15px;
+   box-shadow: 5px 5px black;
+   padding: 2px;
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+}
+.card:hover{
+    cursor: pointer;
+    transform: translateY(20px);
+}
+.card:before{
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to bottom ,	hsl(135, 0%, 10%), hsl(165, 0%, 30%));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card.intro{
+    position: relative;
+    z-index: 3;
+    color: black;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+} */
+
+
+/* .card:hover{
+    cursor: pointer;
+}
+intro{
     height: 70px;
     width: 100px;
     padding:3px;
@@ -46,10 +233,4 @@ body{
     margin: 10px;
     visibility: hidden;
     opacity:0;
-}
-.card:hover{
-    cursor: pointer;
-}
-.card:hover .intro{
-
-}
+} */
