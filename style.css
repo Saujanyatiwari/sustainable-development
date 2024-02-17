@@ -1,0 +1,55 @@
+body{
+    background-color: white;
+}
+.bottom-right {
+     position: absolute;
+     bottom: 0px;
+     right: 10px;
+     padding-top: 75%;
+    
+}
+.bt{
+    height:50px;
+    width: 200px;
+    border-radius: 3px;
+    font-family:Poppins;
+    text-align: center;
+    font-style: bold;
+    color:black;
+    border: 3px solid black;
+    background:transparent;
+    cursor:pointer;
+}
+.bt:hover{
+    background-color: rgb(102, 210, 102);
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+   margin: 25px;
+   box-shadow: 5px 5px black;
+   overflow: hidden;
+}
+.intro{
+    height: 70px;
+    width: 100px;
+    padding:3px;
+    box-sizing: border-box;
+    position: absolute;
+    justify-content: center;
+    background-color: darkgray;
+}
+.p{
+    font-size: small;
+    margin: 10px;
+    visibility: hidden;
+    opacity:0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+
+}
